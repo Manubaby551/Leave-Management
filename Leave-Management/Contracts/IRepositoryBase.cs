@@ -9,6 +9,7 @@ namespace Leave_Management.Contracts
     {
         ICollection<T> Findall();
         T FindById(int id);
+        bool isExists(int id);
         bool Create(T entity);
         bool Update(T entity);
         bool Delete(T entity);

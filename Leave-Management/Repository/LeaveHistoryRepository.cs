@@ -38,7 +38,11 @@ namespace Leave_Management.Repository
             return LeaveHistorys;
         }
 
-
+        public bool isExists(int id)
+        {
+            var exists = _db.LeaveHistories.Any(q => q.Id == 1);
+            return exists;
+        }
 
         public bool save()
         {
